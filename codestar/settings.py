@@ -31,6 +31,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = ['8000-empzsolt-djangoblog-8kuej1884w3.ws-eu107.gitpod.io',
+                '8000-empzsolt-django-blog-6ph0bv47pk.us2.codeanyapp.com',
                 '.herokuapp.com',]
 
 
@@ -43,14 +44,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'crispy_forms',
     'crispy_bootstrap5',
-    'blog',
     'django_summernote',
+    'cloudinary',
+    'blog',
     'about',
 ]
 
